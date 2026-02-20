@@ -34,7 +34,7 @@ const componentBtns = ref([
   {
     label: 'Inclusão',
     style: 'width: 160px',
-    icon: '',
+    icon: 'fa-solid fa-plus',
     action: function () {},
     show: function () {
       return isAdmin.value;
@@ -43,7 +43,7 @@ const componentBtns = ref([
   {
     label: 'Rascunho',
     style: 'width: 200px',
-    icon: '',
+    icon: 'fa-solid fa-pen',
     action: function () {},
     show: function () {
       return isAdmin.value;
@@ -62,7 +62,7 @@ const componentBtns = ref([
   {
     label: 'Paramêtros',
     style: 'width: 200px;',
-    icon: ``,
+    icon: 'fa-solid fa-sliders',
     action: function () {},
     show: function () {
       return isAdmin.value;
@@ -71,7 +71,7 @@ const componentBtns = ref([
   {
     label: 'Indicadores',
     style: 'width: 160px;',
-    icon: '',
+    icon: 'fa-solid fa-caret-down',
     action: function () {},
     show: function () {
       return isAdmin.value;
