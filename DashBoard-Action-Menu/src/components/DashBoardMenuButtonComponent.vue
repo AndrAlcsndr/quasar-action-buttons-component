@@ -1,7 +1,7 @@
 <template>
   <q-card
     class="q-pl-md text-black"
-    style="border-radius: 0% !important; box-shadow: unset; margin-bottom: 15px"
+    style="border-radius: 0% !important; box-shadow: unset; margin-bottom: 20px"
   >
     
     <q-card-section class="row items-center q-pa-none">
