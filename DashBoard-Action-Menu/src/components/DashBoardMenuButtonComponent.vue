@@ -3,7 +3,7 @@
     class="q-pl-md text-black"
     style="border-radius: 0% !important; box-shadow: unset; margin-bottom: 15px"
   >
-    aqui: <q-icon name="fa-solid fa-paperclip" size="24px" />
+    
     <q-card-section class="row items-center q-pa-none">
       <div class="row q-pt-md">
         <div
