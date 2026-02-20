@@ -4,17 +4,31 @@
     style="border-radius: 0% !important; box-shadow: unset; margin-bottom: 15px"
   >
     <q-card-section class="row items-center q-pa-none">
-      <div ></div>
+      <div class="row q-pt-md">
+        <div
+        :class="componente.show() ? 'q-pr-lg q-pb-md' : 'q-pr-none'"
+          v-for="componente in componentBtns"
+          :key="componente.label"
+        >
+          <q-btn
+            :label="componente.label"
+            :style="componente.style"
+            color="primary"
+            class="q-mr-sm q-mb-sm"
+            @click="componente.action()"
+          />
+        </div>
+      </div>
     </q-card-section>
   </q-card>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import { ref } from 'vue';
 
 const isAdmin = ref(true);
 
-let componentBtnsRegular = [
+const componentBtns = ref(
   [
     {
       label: 'Inclusão',
@@ -61,53 +75,5 @@ let componentBtnsRegular = [
         return isAdmin.value
       }
     }
-  ],
-  [
-    {
-      label: 'Avisos',
-      style: 'width: 160px;',
-      icon: '',
-      action: async function () {},
-      show: function () {
-        return isAdmin.value
-      }
-    },
-    {
-      label: 'Perfis',
-      style: 'width: 200px;',
-      icon: '',
-      action: async function () {},
-      show: function () {
-        return isAdmin.value
-      }
-    },
-    {
-      label: 'Itens pendentes',
-      style: 'width: 200px;',
-      icon: '',
-      action: async function () {},
-      show: function () {
-        return isAdmin.value
-      }
-    },
-    {
-      label: 'Filtrar por tipo',
-      style: 'width: 200px;',
-      icon: '',
-      action: async function () {},
-      show: function () {
-        return isAdmin.value
-      }
-    },
-    {
-      label: 'Diligencias',
-      style: 'width: 160px;',
-      icon: '',
-      action: async function () {},
-      show: function () {
-        return isAdmin.value
-      }
-    }
-  ],
-];
+  ]);
 </script>
