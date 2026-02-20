@@ -1,10 +1,10 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <hello-world-component />
+    <hello-world />
   </q-page>
 </template>
 
 <script setup lang="ts">
-import HelloWorldComponent from './HelloWorldComponent.vue';
+import HelloWorld from './HelloWorld.vue';
 
 </script>
