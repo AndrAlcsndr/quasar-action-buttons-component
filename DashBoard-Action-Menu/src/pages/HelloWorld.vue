@@ -1,7 +1,7 @@
 <template>
   <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">Hellooo</div>
+      <div style="font-size: 15vh">Hellooo</div>
       <q-btn
         class="q-mt-xl"
         color="white"
