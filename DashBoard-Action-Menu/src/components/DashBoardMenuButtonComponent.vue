@@ -27,15 +27,19 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import { useRouter } from 'vue-router';
 
 const isAdmin = ref(true);
+const $router = useRouter();
 
 const componentBtns = ref([
   {
     label: 'Inclusão',
     style: 'width: 160px',
     icon: 'fa-solid fa-plus',
-    action: function () {},
+    action: function () {
+      $router.push('/inclusao');
+    },
     show: function () {
       return isAdmin.value;
     },
@@ -44,7 +48,9 @@ const componentBtns = ref([
     label: 'Rascunho',
     style: 'width: 160px',
     icon: 'fa-solid fa-pen',
-    action: function () {},
+    action: function () {
+      $router.push('/rascunho');
+    },
     show: function () {
       return isAdmin.value;
     },
@@ -53,7 +59,9 @@ const componentBtns = ref([
     label: 'Relatórios',
     style: 'width: 160px;',
     icon: 'fa-solid fa-paperclip',
-    action: function () {},
+    action: function () {
+      $router.push('/relatorios');
+    },
     show: function () {
       return isAdmin.value;
     },
