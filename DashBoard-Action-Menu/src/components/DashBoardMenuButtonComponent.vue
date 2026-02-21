@@ -42,7 +42,7 @@ const componentBtns = ref([
   },
   {
     label: 'Rascunho',
-    style: 'width: 200px',
+    style: 'width: 160px',
     icon: 'fa-solid fa-pen',
     action: function () {},
     show: function () {
@@ -51,7 +51,7 @@ const componentBtns = ref([
   },
   {
     label: 'Relatórios',
-    style: 'width: 200px;',
+    style: 'width: 160px;',
     icon: 'fa-solid fa-paperclip',
     action: function () {},
     show: function () {
@@ -61,7 +61,7 @@ const componentBtns = ref([
 
   {
     label: 'Paramêtros',
-    style: 'width: 200px;',
+    style: 'width: 160px;',
     icon: 'fa-solid fa-sliders',
     action: function () {},
     show: function () {
