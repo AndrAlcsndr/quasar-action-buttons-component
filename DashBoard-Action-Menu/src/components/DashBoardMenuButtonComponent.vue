@@ -58,7 +58,6 @@ const componentBtns = ref([
       return isAdmin.value;
     },
   },
-
   {
     label: 'Paramêtros',
     style: 'width: 160px;',
