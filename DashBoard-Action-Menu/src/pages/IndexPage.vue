@@ -1,10 +1,9 @@
 <template>
   <q-page class="row items-center justify-evenly">
-    <hello-world />
+    <router-view />
   </q-page>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from './HelloWorld.vue';
 
 </script>

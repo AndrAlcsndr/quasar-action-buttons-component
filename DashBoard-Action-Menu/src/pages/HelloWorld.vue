@@ -1,20 +1,10 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
-    <div>
+  <q-page class="bg-blue text-white flex flex-center">
+    <div class="text-center">
       <div style="font-size: 15vh">Hellooo</div>
       <dash-board-menu-button-component />
-
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
     </div>
-  </div>
+  </q-page>
 </template>
 
 <script setup lang="ts">
